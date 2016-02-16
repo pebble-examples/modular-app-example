@@ -2,6 +2,8 @@
 
 #include <pebble.h>
 
+typedef void(CommJSReadyCallback)(void);
+
 void comm_init();
 
-bool comm_is_js_ready();
+void comm_deinit();
